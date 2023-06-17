@@ -1,0 +1,75 @@
+input, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+select {
+    background-color: white;
+}
+
+input[type=submit] {
+    width: 50%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin-right: auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 15px;
+}
+
+#content {
+    width: 50%;
+    margin: 0 auto;
+    height: 85%;
+}
+
+body {
+    background-image: url(fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#submit {
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+}
+
+#title {
+    text-align: center;
+    color: rgb(5, 5, 164);
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+#success {
+    font-weight: bold;
+    color: green;
+}
+
+#error {
+    font-weight: bold;
+    color: red;
+}
+
+#send {
+    font-weight: bold;
+    font-size: 100%;
+}

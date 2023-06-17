@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${title}"></title>
+    <link th:href="@{/styles/css/home.css}" rel="stylesheet">
+</head>
+<body>
+<div id="content">
+    <h1 th:text="${title}" id="title"></h1>
+    <div>
+        <form th:action="@{/form}" method="post" th:object="${rabbitRequest}" enctype="multipart/form-data">
+            <input th:if="${rabbitRequest.picture != null}" type="hidden" th:field="*{picture}">
+            <div>
+                <label for="file">Imagen (*) <br>
+                    <input type="file" name="file" required>
+                </label>
+            </div>
+
+            <div>
+                <label for="key">Clave (*) <br>
+                    <input type="password" th:field="*{key}" placeholder="Ingrese una clave" required>
+                </label>
+            </div>
+
+            <div>
+                <label for="iv">Vector de inicialización (IV) <br>
+                    <input type="password" th:field="*{iv}" placeholder="Ingrese IV">
+                </label>
+            </div>
+
+            <div>
+                <label for="option">Encriptar/Desencriptar <br>
+                    <select th:field="*{option}">
+                        <option value="E">Encriptar</option>
+                        <option value="D">Desencriptar</option>
+                    </select>
+                </label>
+            </div>
+
+            <div th:if="${param.success != null}" th:text="${param.success}" id="success"></div>
+            <div th:if="${param.error != null}" th:text="${param.error}" id="error"></div>
+
+            <div id="submit">
+                <input type="submit" value="Enviar" id="send">
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
