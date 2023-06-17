@@ -9,7 +9,7 @@ Se puede correr el código de 2 formas distintas:
 Se dispone de un proyecto en Spring Boot con Thymeleaf donde se puede acceder a una interfaz gráfica para encriptar y desencriptar las imagenes.
 
 Se debe modificar el path donde alojar las imagenes en el application.properties y en el archivo de rabbit también modificar donde se van a alojar.
-Se debe crear una carpeta al nivel del userName con el rabbit.py y con una carpeta "result" donde se van a guardar las imagenes encriptadas o desencriptadas.
+Se debe crear una carpeta al nivel del userName "crypto" con el rabbit.py y con una carpeta "result" donde se van a guardar las imagenes encriptadas o desencriptadas.
 
 
 ### Por línea de comandos
