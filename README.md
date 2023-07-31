@@ -1,6 +1,9 @@
 # Criptografia
+- Materia : Matematica Aplicada
+- Año cursada: 2023
+- Plan: 2023
 
-Cifrador de Flujo Rabbit
+## Cifrador de Flujo Rabbit
 
 Se puede correr el código de 2 formas distintas:
 
